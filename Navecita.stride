@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="Navecita" extends="Actor" extends-java="Actor" enable="true" strideversion="1">
+    <javadoc xml:space="preserve"/>
+    <imports>
+        <import target="java.util.*" enable="true"/>
+        <import target="greenfoot.*" enable="true"/>
+    </imports>
+    <implements/>
+    <fields/>
+    <constructors/>
+    <methods>
+        <method access="public" type="void" type-java="void" name="act" enable="true">
+            <javadoc xml:space="preserve">Act - do whatever the Navecita wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <call expression="move(1)" expression-java="move(1)" enable="true"/>
+                <if condition="Greenfoot.getRandomNumber(100)&lt;3" condition-java="Greenfoot.getRandomNumber(100) &lt; 3" enable="true">
+                    <ifStatements>
+                        <call expression="turn(Greenfoot.getRandomNumber(90)-3)" expression-java="turn(Greenfoot.getRandomNumber(90) - 3)" enable="true"/>
+                    </ifStatements>
+                    <elseIf condition="getX()&lt;=10||getX()&gt;=getWorld().getWidth()-3" condition-java="getX() &lt;= 10 || getX() &gt;= getWorld().getWidth() - 3">
+                        <call expression="turn(180)" expression-java="turn(180)" enable="true"/>
+                    </elseIf>
+                    <elseIf condition="getY()&lt;=10||getY()&gt;=getWorld().getHeight()-3" condition-java="getY() &lt;= 10 || getY() &gt;= getWorld().getHeight() - 3">
+                        <call expression="turn(180)" expression-java="turn(180)" enable="true"/>
+                    </elseIf>
+                </if>
+                <variable type="Actor" type-java="Actor" name="bola" enable="true"/>
+                <assign dest="bola" dest-java="bola" src="getOneObjectAtOffset(0,0,Bola.class)" src-java="getOneObjectAtOffset(0, 0, Bola.class)" enable="true"/>
+                <if condition="bola!=null" condition-java="bola != null" enable="true">
+                    <ifStatements>
+                        <variable type="World" type-java="World" name="world" enable="true"/>
+                        <assign dest="world" dest-java="world" src="getWorld()" src-java="getWorld()" enable="true"/>
+                        <call expression="world.removeObject(bola)" expression-java="world.removeObject(bola)" enable="true"/>
+                        <call expression="getWorld().showText(&quot;Ni modo, ya perdiste.&quot;,getWorld().getWidth()/2,getWorld().getHeight()/2)" expression-java="getWorld().showText(&quot;Ni modo, ya perdiste.&quot;, getWorld().getWidth() / 2, getWorld().getHeight() / 2)" enable="true"/>
+                    </ifStatements>
+                </if>
+            </body>
+        </method>
+    </methods>
+</class>

@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="MyWorld" extends="World" extends-java="World" enable="true" strideversion="1">
+    <javadoc xml:space="preserve">El fondo del videojuego.</javadoc>
+    <imports>
+        <import target="java.util.*" enable="true"/>
+        <import target="greenfoot.*" enable="true"/>
+    </imports>
+    <implements/>
+    <fields>
+        <variable access="public" type="Barra" type-java="Barra" name="barra" value="new Barra()" value-java=" new Barra()" enable="true"/>
+    </fields>
+    <constructors>
+        <constructor access="public" enable="true">
+            <javadoc xml:space="preserve">Constructor for objects of class MyWorld.</javadoc>
+            <params/>
+            <throws/>
+            <delegate target="super" params="750,800,1" params-java="750, 800, 1"/>
+            <body>
+                <call expression="prepare()" expression-java="prepare()" enable="true"/>
+            </body>
+        </constructor>
+    </constructors>
+    <methods>
+        <method access="private" type="void" type-java="void" name="prepare" enable="true">
+            <javadoc xml:space="preserve">Prepare the world for the start of the program.
+That is: create the initial objects and add them to the world.</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <variable type="Barra" type-java="Barra" name="barra" value="new Barra()" value-java=" new Barra()" enable="true"/>
+                <call expression="addObject(barra,382,496)" expression-java="addObject(barra, 382, 496)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques,160,119)" expression-java="addObject(bloques, 160, 119)" enable="true"/>
+                <call expression="bloques.setLocation(202,119)" expression-java="bloques.setLocation(202, 119)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques2" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques2,202,119)" expression-java="addObject(bloques2, 202, 119)" enable="true"/>
+                <call expression="bloques.setLocation(244,119)" expression-java="bloques.setLocation(244, 119)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques3" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques3,244,119)" expression-java="addObject(bloques3, 244, 119)" enable="true"/>
+                <call expression="bloques.setLocation(286,119)" expression-java="bloques.setLocation(286, 119)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques4" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques4,286,119)" expression-java="addObject(bloques4, 286, 119)" enable="true"/>
+                <call expression="bloques2.setLocation(328,119)" expression-java="bloques2.setLocation(328, 119)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques5" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques5,328,119)" expression-java="addObject(bloques5, 328, 119)" enable="true"/>
+                <call expression="bloques3.setLocation(370,119)" expression-java="bloques3.setLocation(370, 119)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques6" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques6,370,119)" expression-java="addObject(bloques6, 370, 119)" enable="true"/>
+                <call expression="bloques4.setLocation(412,119)" expression-java="bloques4.setLocation(412, 119)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques7" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques7,412,119)" expression-java="addObject(bloques7, 412, 119)" enable="true"/>
+                <call expression="bloques5.setLocation(455,119)" expression-java="bloques5.setLocation(455, 119)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques8" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques8,455,119)" expression-java="addObject(bloques8, 455, 119)" enable="true"/>
+                <call expression="bloques6.setLocation(497,119)" expression-java="bloques6.setLocation(497, 119)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques9" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques9,497,119)" expression-java="addObject(bloques9, 497, 119)" enable="true"/>
+                <call expression="bloques7.setLocation(538,119)" expression-java="bloques7.setLocation(538, 119)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques10" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques10,538,119)" expression-java="addObject(bloques10, 538, 119)" enable="true"/>
+                <call expression="bloques8.setLocation(580,119)" expression-java="bloques8.setLocation(580, 119)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques11" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques11,580,119)" expression-java="addObject(bloques11, 580, 119)" enable="true"/>
+                <call expression="bloques.setLocation(160,142)" expression-java="bloques.setLocation(160, 142)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques12" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques12,160,142)" expression-java="addObject(bloques12, 160, 142)" enable="true"/>
+                <call expression="bloques.setLocation(201,141)" expression-java="bloques.setLocation(201, 141)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques13" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques13,201,141)" expression-java="addObject(bloques13, 201, 141)" enable="true"/>
+                <call expression="bloques.setLocation(243,142)" expression-java="bloques.setLocation(243, 142)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques14" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques14,243,142)" expression-java="addObject(bloques14, 243, 142)" enable="true"/>
+                <call expression="bloques.setLocation(284,141)" expression-java="bloques.setLocation(284, 141)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques15" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques15,284,141)" expression-java="addObject(bloques15, 284, 141)" enable="true"/>
+                <call expression="bloques2.setLocation(326,142)" expression-java="bloques2.setLocation(326, 142)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques16" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques16,326,142)" expression-java="addObject(bloques16, 326, 142)" enable="true"/>
+                <call expression="bloques3.setLocation(368,141)" expression-java="bloques3.setLocation(368, 141)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques17" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques17,368,141)" expression-java="addObject(bloques17, 368, 141)" enable="true"/>
+                <call expression="bloques4.setLocation(409,141)" expression-java="bloques4.setLocation(409, 141)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques18" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques18,409,141)" expression-java="addObject(bloques18, 409, 141)" enable="true"/>
+                <call expression="bloques5.setLocation(451,140)" expression-java="bloques5.setLocation(451, 140)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques19" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques19,451,140)" expression-java="addObject(bloques19, 451, 140)" enable="true"/>
+                <call expression="bloques6.setLocation(493,140)" expression-java="bloques6.setLocation(493, 140)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques20" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques20,493,140)" expression-java="addObject(bloques20, 493, 140)" enable="true"/>
+                <call expression="bloques7.setLocation(536,140)" expression-java="bloques7.setLocation(536, 140)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques21" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques21,536,140)" expression-java="addObject(bloques21, 536, 140)" enable="true"/>
+                <call expression="bloques8.setLocation(579,140)" expression-java="bloques8.setLocation(579, 140)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques22" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques22,579,140)" expression-java="addObject(bloques22, 579, 140)" enable="true"/>
+                <call expression="bloques.setLocation(159,165)" expression-java="bloques.setLocation(159, 165)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques23" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques23,159,165)" expression-java="addObject(bloques23, 159, 165)" enable="true"/>
+                <call expression="bloques.setLocation(199,164)" expression-java="bloques.setLocation(199, 164)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques24" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques24,199,164)" expression-java="addObject(bloques24, 199, 164)" enable="true"/>
+                <call expression="bloques.setLocation(240,162)" expression-java="bloques.setLocation(240, 162)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques25" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques25,240,162)" expression-java="addObject(bloques25, 240, 162)" enable="true"/>
+                <call expression="removeObject(bloques25)" expression-java="removeObject(bloques25)" enable="true"/>
+                <call expression="removeObject(bloques24)" expression-java="removeObject(bloques24)" enable="true"/>
+                <call expression="bloques.setLocation(199,165)" expression-java="bloques.setLocation(199, 165)" enable="true"/>
+                <call expression="addObject(bloques24,199,165)" expression-java="addObject(bloques24, 199, 165)" enable="true"/>
+                <call expression="bloques.setLocation(239,164)" expression-java="bloques.setLocation(239, 164)" enable="true"/>
+                <call expression="bloques.setLocation(280,164)" expression-java="bloques.setLocation(280, 164)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques26" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques26,280,164)" expression-java="addObject(bloques26, 280, 164)" enable="true"/>
+                <call expression="bloques2.setLocation(322,163)" expression-java="bloques2.setLocation(322, 163)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques27" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques27,322,163)" expression-java="addObject(bloques27, 322, 163)" enable="true"/>
+                <call expression="bloques3.setLocation(364,163)" expression-java="bloques3.setLocation(364, 163)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques28" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques28,364,163)" expression-java="addObject(bloques28, 364, 163)" enable="true"/>
+                <call expression="bloques4.setLocation(406,162)" expression-java="bloques4.setLocation(406, 162)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques29" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques29,406,162)" expression-java="addObject(bloques29, 406, 162)" enable="true"/>
+                <call expression="bloques5.setLocation(449,163)" expression-java="bloques5.setLocation(449, 163)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques30" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques30,449,163)" expression-java="addObject(bloques30, 449, 163)" enable="true"/>
+                <call expression="bloques6.setLocation(492,163)" expression-java="bloques6.setLocation(492, 163)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques31" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques31,492,163)" expression-java="addObject(bloques31, 492, 163)" enable="true"/>
+                <call expression="bloques7.setLocation(535,163)" expression-java="bloques7.setLocation(535, 163)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques32" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques32,535,163)" expression-java="addObject(bloques32, 535, 163)" enable="true"/>
+                <call expression="bloques8.setLocation(577,163)" expression-java="bloques8.setLocation(577, 163)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques33" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques33,577,163)" expression-java="addObject(bloques33, 577, 163)" enable="true"/>
+                <call expression="bloques.setLocation(156,187)" expression-java="bloques.setLocation(156, 187)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques34" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques34,156,187)" expression-java="addObject(bloques34, 156, 187)" enable="true"/>
+                <call expression="bloques.setLocation(157,209)" expression-java="bloques.setLocation(157, 209)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques35" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques35,157,209)" expression-java="addObject(bloques35, 157, 209)" enable="true"/>
+                <call expression="bloques.setLocation(155,231)" expression-java="bloques.setLocation(155, 231)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques36" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques36,155,231)" expression-java="addObject(bloques36, 155, 231)" enable="true"/>
+                <call expression="barra.setLocation(155,254)" expression-java="barra.setLocation(155, 254)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques37" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques37,155,254)" expression-java="addObject(bloques37, 155, 254)" enable="true"/>
+                <call expression="barra.setLocation(155,276)" expression-java="barra.setLocation(155, 276)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques38" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques38,155,276)" expression-java="addObject(bloques38, 155, 276)" enable="true"/>
+                <call expression="barra.setLocation(155,300)" expression-java="barra.setLocation(155, 300)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques39" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques39,155,300)" expression-java="addObject(bloques39, 155, 300)" enable="true"/>
+                <call expression="barra.setLocation(153,322)" expression-java="barra.setLocation(153, 322)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques40" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques40,153,322)" expression-java="addObject(bloques40, 153, 322)" enable="true"/>
+                <call expression="bloques8.setLocation(577,185)" expression-java="bloques8.setLocation(577, 185)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques41" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques41,577,185)" expression-java="addObject(bloques41, 577, 185)" enable="true"/>
+                <call expression="bloques8.setLocation(576,207)" expression-java="bloques8.setLocation(576, 207)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques42" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques42,576,207)" expression-java="addObject(bloques42, 576, 207)" enable="true"/>
+                <call expression="bloques8.setLocation(576,228)" expression-java="bloques8.setLocation(576, 228)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques43" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques43,576,228)" expression-java="addObject(bloques43, 576, 228)" enable="true"/>
+                <call expression="barra.setLocation(576,248)" expression-java="barra.setLocation(576, 248)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques44" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques44,576,248)" expression-java="addObject(bloques44, 576, 248)" enable="true"/>
+                <call expression="barra.setLocation(576,271)" expression-java="barra.setLocation(576, 271)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques45" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques45,576,271)" expression-java="addObject(bloques45, 576, 271)" enable="true"/>
+                <call expression="barra.setLocation(576,292)" expression-java="barra.setLocation(576, 292)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques46" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques46,576,292)" expression-java="addObject(bloques46, 576, 292)" enable="true"/>
+                <call expression="barra.setLocation(632,304)" expression-java="barra.setLocation(632, 304)" enable="true"/>
+                <call expression="barra.setLocation(576,315)" expression-java="barra.setLocation(576, 315)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques47" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques47,576,315)" expression-java="addObject(bloques47, 576, 315)" enable="true"/>
+                <call expression="barra.setLocation(576,338)" expression-java="barra.setLocation(576, 338)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques48" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques48,576,338)" expression-java="addObject(bloques48, 576, 338)" enable="true"/>
+                <call expression="removeObject(bloques48)" expression-java="removeObject(bloques48)" enable="true"/>
+                <call expression="barra.setLocation(193,324)" expression-java="barra.setLocation(193, 324)" enable="true"/>
+                <call expression="addObject(bloques48,193,324)" expression-java="addObject(bloques48, 193, 324)" enable="true"/>
+                <call expression="barra.setLocation(231,324)" expression-java="barra.setLocation(231, 324)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques49" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques49,231,324)" expression-java="addObject(bloques49, 231, 324)" enable="true"/>
+                <call expression="barra.setLocation(272,324)" expression-java="barra.setLocation(272, 324)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques50" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques50,272,324)" expression-java="addObject(bloques50, 272, 324)" enable="true"/>
+                <call expression="barra.setLocation(313,324)" expression-java="barra.setLocation(313, 324)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques51" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques51,313,324)" expression-java="addObject(bloques51, 313, 324)" enable="true"/>
+                <call expression="barra.setLocation(354,323)" expression-java="barra.setLocation(354, 323)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques52" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques52,354,323)" expression-java="addObject(bloques52, 354, 323)" enable="true"/>
+                <call expression="barra.setLocation(395,324)" expression-java="barra.setLocation(395, 324)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques53" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques53,395,324)" expression-java="addObject(bloques53, 395, 324)" enable="true"/>
+                <call expression="barra.setLocation(436,324)" expression-java="barra.setLocation(436, 324)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques54" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques54,436,324)" expression-java="addObject(bloques54, 436, 324)" enable="true"/>
+                <call expression="barra.setLocation(476,324)" expression-java="barra.setLocation(476, 324)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques55" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques55,476,324)" expression-java="addObject(bloques55, 476, 324)" enable="true"/>
+                <call expression="barra.setLocation(518,324)" expression-java="barra.setLocation(518, 324)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques56" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques56,518,324)" expression-java="addObject(bloques56, 518, 324)" enable="true"/>
+                <call expression="removeObject(bloques56)" expression-java="removeObject(bloques56)" enable="true"/>
+                <call expression="removeObject(bloques55)" expression-java="removeObject(bloques55)" enable="true"/>
+                <call expression="removeObject(bloques54)" expression-java="removeObject(bloques54)" enable="true"/>
+                <call expression="removeObject(bloques53)" expression-java="removeObject(bloques53)" enable="true"/>
+                <call expression="removeObject(bloques52)" expression-java="removeObject(bloques52)" enable="true"/>
+                <call expression="barra.setLocation(317,321)" expression-java="barra.setLocation(317, 321)" enable="true"/>
+                <call expression="removeObject(bloques51)" expression-java="removeObject(bloques51)" enable="true"/>
+                <call expression="removeObject(bloques50)" expression-java="removeObject(bloques50)" enable="true"/>
+                <call expression="removeObject(bloques49)" expression-java="removeObject(bloques49)" enable="true"/>
+                <call expression="removeObject(bloques48)" expression-java="removeObject(bloques48)" enable="true"/>
+                <call expression="bloques.setLocation(196,187)" expression-java="bloques.setLocation(196, 187)" enable="true"/>
+                <call expression="addObject(bloques48,196,187)" expression-java="addObject(bloques48, 196, 187)" enable="true"/>
+                <call expression="bloques.setLocation(235,187)" expression-java="bloques.setLocation(235, 187)" enable="true"/>
+                <call expression="addObject(bloques49,235,187)" expression-java="addObject(bloques49, 235, 187)" enable="true"/>
+                <call expression="bloques.setLocation(276,186)" expression-java="bloques.setLocation(276, 186)" enable="true"/>
+                <call expression="addObject(bloques50,276,186)" expression-java="addObject(bloques50, 276, 186)" enable="true"/>
+                <call expression="bloques2.setLocation(319,185)" expression-java="bloques2.setLocation(319, 185)" enable="true"/>
+                <call expression="addObject(bloques51,319,185)" expression-java="addObject(bloques51, 319, 185)" enable="true"/>
+                <call expression="bloques3.setLocation(361,185)" expression-java="bloques3.setLocation(361, 185)" enable="true"/>
+                <call expression="addObject(bloques52,361,185)" expression-java="addObject(bloques52, 361, 185)" enable="true"/>
+                <call expression="bloques4.setLocation(404,183)" expression-java="bloques4.setLocation(404, 183)" enable="true"/>
+                <call expression="addObject(bloques53,404,183)" expression-java="addObject(bloques53, 404, 183)" enable="true"/>
+                <call expression="bloques5.setLocation(448,183)" expression-java="bloques5.setLocation(448, 183)" enable="true"/>
+                <call expression="addObject(bloques54,448,183)" expression-java="addObject(bloques54, 448, 183)" enable="true"/>
+                <call expression="bloques6.setLocation(491,183)" expression-java="bloques6.setLocation(491, 183)" enable="true"/>
+                <call expression="addObject(bloques55,491,183)" expression-java="addObject(bloques55, 491, 183)" enable="true"/>
+                <call expression="bloques7.setLocation(531,184)" expression-java="bloques7.setLocation(531, 184)" enable="true"/>
+                <call expression="addObject(bloques56,531,184)" expression-java="addObject(bloques56, 531, 184)" enable="true"/>
+                <call expression="removeObject(bloques56)" expression-java="removeObject(bloques56)" enable="true"/>
+                <call expression="bloques7.setLocation(534,184)" expression-java="bloques7.setLocation(534, 184)" enable="true"/>
+                <call expression="addObject(bloques56,534,184)" expression-java="addObject(bloques56, 534, 184)" enable="true"/>
+                <call expression="bloques.setLocation(198,208)" expression-java="bloques.setLocation(198, 208)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques57" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques57,198,208)" expression-java="addObject(bloques57, 198, 208)" enable="true"/>
+                <call expression="bloques.setLocation(239,207)" expression-java="bloques.setLocation(239, 207)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques58" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques58,239,207)" expression-java="addObject(bloques58, 239, 207)" enable="true"/>
+                <call expression="bloques.setLocation(280,207)" expression-java="bloques.setLocation(280, 207)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques59" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques59,280,207)" expression-java="addObject(bloques59, 280, 207)" enable="true"/>
+                <call expression="bloques2.setLocation(321,207)" expression-java="bloques2.setLocation(321, 207)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques60" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques60,321,207)" expression-java="addObject(bloques60, 321, 207)" enable="true"/>
+                <call expression="bloques3.setLocation(364,207)" expression-java="bloques3.setLocation(364, 207)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques61" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques61,364,207)" expression-java="addObject(bloques61, 364, 207)" enable="true"/>
+                <call expression="bloques4.setLocation(408,206)" expression-java="bloques4.setLocation(408, 206)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques62" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques62,408,206)" expression-java="addObject(bloques62, 408, 206)" enable="true"/>
+                <call expression="bloques5.setLocation(449,205)" expression-java="bloques5.setLocation(449, 205)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques63" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques63,449,205)" expression-java="addObject(bloques63, 449, 205)" enable="true"/>
+                <call expression="bloques6.setLocation(492,205)" expression-java="bloques6.setLocation(492, 205)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques64" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques64,492,205)" expression-java="addObject(bloques64, 492, 205)" enable="true"/>
+                <call expression="bloques7.setLocation(534,205)" expression-java="bloques7.setLocation(534, 205)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques65" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques65,534,205)" expression-java="addObject(bloques65, 534, 205)" enable="true"/>
+                <call expression="bloques.setLocation(196,231)" expression-java="bloques.setLocation(196, 231)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques66" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques66,196,231)" expression-java="addObject(bloques66, 196, 231)" enable="true"/>
+                <call expression="bloques.setLocation(238,230)" expression-java="bloques.setLocation(238, 230)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques67" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques67,238,230)" expression-java="addObject(bloques67, 238, 230)" enable="true"/>
+                <call expression="bloques.setLocation(282,230)" expression-java="bloques.setLocation(282, 230)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques68" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques68,282,230)" expression-java="addObject(bloques68, 282, 230)" enable="true"/>
+                <call expression="bloques2.setLocation(325,229)" expression-java="bloques2.setLocation(325, 229)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques69" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques69,325,229)" expression-java="addObject(bloques69, 325, 229)" enable="true"/>
+                <call expression="bloques3.setLocation(368,230)" expression-java="bloques3.setLocation(368, 230)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques70" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques70,368,230)" expression-java="addObject(bloques70, 368, 230)" enable="true"/>
+                <call expression="bloques4.setLocation(410,230)" expression-java="bloques4.setLocation(410, 230)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques71" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques71,410,230)" expression-java="addObject(bloques71, 410, 230)" enable="true"/>
+                <call expression="bloques5.setLocation(452,229)" expression-java="bloques5.setLocation(452, 229)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques72" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques72,452,229)" expression-java="addObject(bloques72, 452, 229)" enable="true"/>
+                <call expression="bloques6.setLocation(496,228)" expression-java="bloques6.setLocation(496, 228)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques73" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques73,496,228)" expression-java="addObject(bloques73, 496, 228)" enable="true"/>
+                <call expression="bloques7.setLocation(538,226)" expression-java="bloques7.setLocation(538, 226)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques74" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques74,538,226)" expression-java="addObject(bloques74, 538, 226)" enable="true"/>
+                <call expression="barra.setLocation(533,249)" expression-java="barra.setLocation(533, 249)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques75" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques75,533,249)" expression-java="addObject(bloques75, 533, 249)" enable="true"/>
+                <call expression="barra.setLocation(490,250)" expression-java="barra.setLocation(490, 250)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques76" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques76,490,250)" expression-java="addObject(bloques76, 490, 250)" enable="true"/>
+                <call expression="barra.setLocation(446,251)" expression-java="barra.setLocation(446, 251)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques77" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques77,446,251)" expression-java="addObject(bloques77, 446, 251)" enable="true"/>
+                <call expression="barra.setLocation(403,251)" expression-java="barra.setLocation(403, 251)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques78" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques78,403,251)" expression-java="addObject(bloques78, 403, 251)" enable="true"/>
+                <call expression="barra.setLocation(360,251)" expression-java="barra.setLocation(360, 251)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques79" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques79,360,251)" expression-java="addObject(bloques79, 360, 251)" enable="true"/>
+                <call expression="barra.setLocation(316,251)" expression-java="barra.setLocation(316, 251)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques80" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques80,316,251)" expression-java="addObject(bloques80, 316, 251)" enable="true"/>
+                <call expression="barra.setLocation(272,252)" expression-java="barra.setLocation(272, 252)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques81" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques81,272,252)" expression-java="addObject(bloques81, 272, 252)" enable="true"/>
+                <call expression="barra.setLocation(228,252)" expression-java="barra.setLocation(228, 252)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques82" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques82,228,252)" expression-java="addObject(bloques82, 228, 252)" enable="true"/>
+                <call expression="barra.setLocation(195,254)" expression-java="barra.setLocation(195, 254)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques83" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques83,195,254)" expression-java="addObject(bloques83, 195, 254)" enable="true"/>
+                <call expression="barra.setLocation(484,357)" expression-java="barra.setLocation(484, 357)" enable="true"/>
+                <call expression="barra.setLocation(197,277)" expression-java="barra.setLocation(197, 277)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques84" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques84,197,277)" expression-java="addObject(bloques84, 197, 277)" enable="true"/>
+                <call expression="barra.setLocation(239,276)" expression-java="barra.setLocation(239, 276)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques85" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques85,239,276)" expression-java="addObject(bloques85, 239, 276)" enable="true"/>
+                <call expression="barra.setLocation(283,276)" expression-java="barra.setLocation(283, 276)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques86" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques86,283,276)" expression-java="addObject(bloques86, 283, 276)" enable="true"/>
+                <call expression="barra.setLocation(326,274)" expression-java="barra.setLocation(326, 274)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques87" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques87,326,274)" expression-java="addObject(bloques87, 326, 274)" enable="true"/>
+                <call expression="barra.setLocation(370,273)" expression-java="barra.setLocation(370, 273)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques88" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques88,370,273)" expression-java="addObject(bloques88, 370, 273)" enable="true"/>
+                <call expression="barra.setLocation(412,272)" expression-java="barra.setLocation(412, 272)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques89" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques89,412,272)" expression-java="addObject(bloques89, 412, 272)" enable="true"/>
+                <call expression="barra.setLocation(459,272)" expression-java="barra.setLocation(459, 272)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques90" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques90,459,272)" expression-java="addObject(bloques90, 459, 272)" enable="true"/>
+                <call expression="barra.setLocation(501,271)" expression-java="barra.setLocation(501, 271)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques91" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques91,501,271)" expression-java="addObject(bloques91, 501, 271)" enable="true"/>
+                <call expression="barra.setLocation(536,271)" expression-java="barra.setLocation(536, 271)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques92" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques92,536,271)" expression-java="addObject(bloques92, 536, 271)" enable="true"/>
+                <call expression="barra.setLocation(196,300)" expression-java="barra.setLocation(196, 300)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques93" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques93,196,300)" expression-java="addObject(bloques93, 196, 300)" enable="true"/>
+                <call expression="barra.setLocation(238,299)" expression-java="barra.setLocation(238, 299)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques94" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques94,238,299)" expression-java="addObject(bloques94, 238, 299)" enable="true"/>
+                <call expression="barra.setLocation(281,300)" expression-java="barra.setLocation(281, 300)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques95" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques95,281,300)" expression-java="addObject(bloques95, 281, 300)" enable="true"/>
+                <call expression="barra.setLocation(325,299)" expression-java="barra.setLocation(325, 299)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques96" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques96,325,299)" expression-java="addObject(bloques96, 325, 299)" enable="true"/>
+                <call expression="barra.setLocation(369,299)" expression-java="barra.setLocation(369, 299)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques97" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques97,369,299)" expression-java="addObject(bloques97, 369, 299)" enable="true"/>
+                <call expression="barra.setLocation(413,298)" expression-java="barra.setLocation(413, 298)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques98" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques98,413,298)" expression-java="addObject(bloques98, 413, 298)" enable="true"/>
+                <call expression="barra.setLocation(456,297)" expression-java="barra.setLocation(456, 297)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques99" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques99,456,297)" expression-java="addObject(bloques99, 456, 297)" enable="true"/>
+                <call expression="barra.setLocation(501,295)" expression-java="barra.setLocation(501, 295)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques100" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques100,501,295)" expression-java="addObject(bloques100, 501, 295)" enable="true"/>
+                <call expression="removeObject(bloques100)" expression-java="removeObject(bloques100)" enable="true"/>
+                <call expression="barra.setLocation(499,296)" expression-java="barra.setLocation(499, 296)" enable="true"/>
+                <call expression="addObject(bloques100,499,296)" expression-java="addObject(bloques100, 499, 296)" enable="true"/>
+                <call expression="barra.setLocation(538,296)" expression-java="barra.setLocation(538, 296)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques101" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques101,538,296)" expression-java="addObject(bloques101, 538, 296)" enable="true"/>
+                <call expression="barra.setLocation(532,316)" expression-java="barra.setLocation(532, 316)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques102" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques102,532,316)" expression-java="addObject(bloques102, 532, 316)" enable="true"/>
+                <call expression="barra.setLocation(194,321)" expression-java="barra.setLocation(194, 321)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques103" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques103,194,321)" expression-java="addObject(bloques103, 194, 321)" enable="true"/>
+                <call expression="barra.setLocation(236,320)" expression-java="barra.setLocation(236, 320)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques104" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques104,236,320)" expression-java="addObject(bloques104, 236, 320)" enable="true"/>
+                <call expression="barra.setLocation(278,321)" expression-java="barra.setLocation(278, 321)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques105" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques105,278,321)" expression-java="addObject(bloques105, 278, 321)" enable="true"/>
+                <call expression="barra.setLocation(320,320)" expression-java="barra.setLocation(320, 320)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques106" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques106,320,320)" expression-java="addObject(bloques106, 320, 320)" enable="true"/>
+                <call expression="barra.setLocation(364,321)" expression-java="barra.setLocation(364, 321)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques107" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques107,364,321)" expression-java="addObject(bloques107, 364, 321)" enable="true"/>
+                <call expression="barra.setLocation(407,320)" expression-java="barra.setLocation(407, 320)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques108" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques108,407,320)" expression-java="addObject(bloques108, 407, 320)" enable="true"/>
+                <call expression="barra.setLocation(452,320)" expression-java="barra.setLocation(452, 320)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques109" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques109,452,320)" expression-java="addObject(bloques109, 452, 320)" enable="true"/>
+                <call expression="barra.setLocation(492,319)" expression-java="barra.setLocation(492, 319)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques110" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques110,492,319)" expression-java="addObject(bloques110, 492, 319)" enable="true"/>
+                <call expression="removeObject(barra)" expression-java="removeObject(barra)" enable="true"/>
+                <call expression="addObject(barra,367,522)" expression-java="addObject(barra, 367, 522)" enable="true"/>
+                <call expression="barra.setLocation(372,552)" expression-java="barra.setLocation(372, 552)" enable="true"/>
+                <call expression="bloques5.setLocation(470,219)" expression-java="bloques5.setLocation(470, 219)" enable="true"/>
+                <call expression="barra.setLocation(371,596)" expression-java="barra.setLocation(371, 596)" enable="true"/>
+                <call expression="barra.setLocation(373,597)" expression-java="barra.setLocation(373, 597)" enable="true"/>
+                <call expression="bloques33.setLocation(688,304)" expression-java="bloques33.setLocation(688, 304)" enable="true"/>
+                <variable type="Navecita" type-java="Navecita" name="navecita" value="new Navecita()" value-java=" new Navecita()" enable="true"/>
+                <call expression="addObject(navecita,688,304)" expression-java="addObject(navecita, 688, 304)" enable="true"/>
+                <call expression="bloques23.setLocation(41,306)" expression-java="bloques23.setLocation(41, 306)" enable="true"/>
+                <variable type="Navecita" type-java="Navecita" name="navecita2" value="new Navecita()" value-java=" new Navecita()" enable="true"/>
+                <call expression="addObject(navecita2,41,306)" expression-java="addObject(navecita2, 41, 306)" enable="true"/>
+                <call expression="bloques46.setLocation(584,440)" expression-java="bloques46.setLocation(584, 440)" enable="true"/>
+                <call expression="barra.setLocation(370,601)" expression-java="barra.setLocation(370, 601)" enable="true"/>
+                <call expression="bloques39.setLocation(103,435)" expression-java="bloques39.setLocation(103, 435)" enable="true"/>
+                <call expression="bloques42.setLocation(596,355)" expression-java="bloques42.setLocation(596, 355)" enable="true"/>
+                <call expression="bloques76.setLocation(347,382)" expression-java="bloques76.setLocation(347, 382)" enable="true"/>
+                <call expression="bloques23.setLocation(48,216)" expression-java="bloques23.setLocation(48, 216)" enable="true"/>
+                <call expression="bloques8.setLocation(692,450)" expression-java="bloques8.setLocation(692, 450)" enable="true"/>
+                <call expression="bloques33.setLocation(688,389)" expression-java="bloques33.setLocation(688, 389)" enable="true"/>
+                <call expression="barra.setLocation(372,652)" expression-java="barra.setLocation(372, 652)" enable="true"/>
+                <call expression="barra.setLocation(381,704)" expression-java="barra.setLocation(381, 704)" enable="true"/>
+                <call expression="barra.setLocation(394,551)" expression-java="barra.setLocation(394, 551)" enable="true"/>
+                <call expression="barra.setLocation(406,397)" expression-java="barra.setLocation(406, 397)" enable="true"/>
+                <call expression="barra.setLocation(351,635)" expression-java="barra.setLocation(351, 635)" enable="true"/>
+                <call expression="barra.setLocation(376,631)" expression-java="barra.setLocation(376, 631)" enable="true"/>
+                <call expression="bloques46.setLocation(362,580)" expression-java="bloques46.setLocation(362, 580)" enable="true"/>
+                <call expression="barra.setLocation(387,596)" expression-java="barra.setLocation(387, 596)" enable="true"/>
+                <call expression="bloques46.setLocation(388,564)" expression-java="bloques46.setLocation(388, 564)" enable="true"/>
+                <call expression="bloques46.setLocation(526,544)" expression-java="bloques46.setLocation(526, 544)" enable="true"/>
+                <call expression="bloques46.setLocation(372,664)" expression-java="bloques46.setLocation(372, 664)" enable="true"/>
+                <call expression="bloques46.setLocation(448,552)" expression-java="bloques46.setLocation(448, 552)" enable="true"/>
+                <call expression="removeObject(bloques46)" expression-java="removeObject(bloques46)" enable="true"/>
+                <call expression="barra.setLocation(372,611)" expression-java="barra.setLocation(372, 611)" enable="true"/>
+                <call expression="bloques.setLocation(160,120)" expression-java="bloques.setLocation(160, 120)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques111" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques111,160,120)" expression-java="addObject(bloques111, 160, 120)" enable="true"/>
+                <call expression="bloques.setLocation(200,120)" expression-java="bloques.setLocation(200, 120)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques112" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques112,200,120)" expression-java="addObject(bloques112, 200, 120)" enable="true"/>
+                <call expression="bloques.setLocation(243,120)" expression-java="bloques.setLocation(243, 120)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques113" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques113,243,120)" expression-java="addObject(bloques113, 243, 120)" enable="true"/>
+                <call expression="bloques.setLocation(284,120)" expression-java="bloques.setLocation(284, 120)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques114" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques114,284,120)" expression-java="addObject(bloques114, 284, 120)" enable="true"/>
+                <call expression="bloques.setLocation(327,120)" expression-java="bloques.setLocation(327, 120)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques115" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques115,327,120)" expression-java="addObject(bloques115, 327, 120)" enable="true"/>
+                <call expression="bloques.setLocation(368,119)" expression-java="bloques.setLocation(368, 119)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques116" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques116,368,119)" expression-java="addObject(bloques116, 368, 119)" enable="true"/>
+                <call expression="bloques.setLocation(409,120)" expression-java="bloques.setLocation(409, 120)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques117" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques117,409,120)" expression-java="addObject(bloques117, 409, 120)" enable="true"/>
+                <call expression="bloques2.setLocation(452,117)" expression-java="bloques2.setLocation(452, 117)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques118" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques118,452,117)" expression-java="addObject(bloques118, 452, 117)" enable="true"/>
+                <call expression="bloques.setLocation(159,165)" expression-java="bloques.setLocation(159, 165)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques119" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques119,159,165)" expression-java="addObject(bloques119, 159, 165)" enable="true"/>
+                <call expression="bloques.setLocation(237,164)" expression-java="bloques.setLocation(237, 164)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques120" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques120,237,164)" expression-java="addObject(bloques120, 237, 164)" enable="true"/>
+                <call expression="bloques5.setLocation(576,162)" expression-java="bloques5.setLocation(576, 162)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques121" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques121,576,162)" expression-java="addObject(bloques121, 576, 162)" enable="true"/>
+                <call expression="bloques5.setLocation(577,208)" expression-java="bloques5.setLocation(577, 208)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques122" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques122,577,208)" expression-java="addObject(bloques122, 577, 208)" enable="true"/>
+                <call expression="bloques3.setLocation(488,251)" expression-java="bloques3.setLocation(488, 251)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques123" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques123,488,251)" expression-java="addObject(bloques123, 488, 251)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques124" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques124,152,298)" expression-java="addObject(bloques124, 152, 298)" enable="true"/>
+                <call expression="bloques5.setLocation(579,294)" expression-java="bloques5.setLocation(579, 294)" enable="true"/>
+                <variable type="Bloques" type-java="Bloques" name="bloques125" value="new Bloques()" value-java=" new Bloques()" enable="true"/>
+                <call expression="addObject(bloques125,579,294)" expression-java="addObject(bloques125, 579, 294)" enable="true"/>
+                <call expression="barra.setLocation(350,574)" expression-java="barra.setLocation(350, 574)" enable="true"/>
+                <call expression="barra.setLocation(357,472)" expression-java="barra.setLocation(357, 472)" enable="true"/>
+                <call expression="barra.setLocation(396,655)" expression-java="barra.setLocation(396, 655)" enable="true"/>
+                <variable type="Bola" type-java="Bola" name="bola" value="new Bola(barra,this)" value-java=" new Bola(barra, this)" enable="true"/>
+                <call expression="addObject(bola,350,450)" expression-java="addObject(bola, 350, 450)" enable="true"/>
+                <call expression="removeObject(bloques23)" expression-java="removeObject(bloques23)" enable="true"/>
+                <call expression="removeObject(bloques39)" expression-java="removeObject(bloques39)" enable="true"/>
+                <call expression="removeObject(bloques76)" expression-java="removeObject(bloques76)" enable="true"/>
+                <call expression="removeObject(bloques42)" expression-java="removeObject(bloques42)" enable="true"/>
+                <call expression="removeObject(bloques33)" expression-java="removeObject(bloques33)" enable="true"/>
+                <call expression="removeObject(bloques8)" expression-java="removeObject(bloques8)" enable="true"/>
+                <call expression="barra.setLocation(350,660)" expression-java="barra.setLocation(350, 660)" enable="true"/>
+                <call expression="navecita2.setLocation(39,36)" expression-java="navecita2.setLocation(39, 36)" enable="true"/>
+                <call expression="navecita.setLocation(704,27)" expression-java="navecita.setLocation(704, 27)" enable="true"/>
+            </body>
+        </method>
+    </methods>
+</class>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="Bola" extends="Actor" extends-java="Actor" enable="true" strideversion="1">
+    <javadoc xml:space="preserve"/>
+    <imports>
+        <import target="java.util.*" enable="true"/>
+        <import target="greenfoot.*" enable="true"/>
+    </imports>
+    <implements/>
+    <fields>
+        <variable access="private" type="int" type-java="int" name="dx" value="0" value-java="0" enable="true"/>
+        <variable access="private" type="int" type-java="int" name="dy" value="5" value-java="5" enable="true"/>
+        <variable access="public" type="Barra" type-java="Barra" name="barra" enable="true"/>
+        <variable access="public" type="World" type-java="World" name="myWorld" enable="true"/>
+        <variable access="private" type="int" type-java="int" name="ContadorDePuntos" value="0" value-java="0" enable="true"/>
+    </fields>
+    <constructors>
+        <constructor access="public" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params>
+                <params type="Barra" type-java="Barra" name="barra"/>
+                <params type="World" type-java="World" name="myWorld"/>
+            </params>
+            <throws/>
+            <body>
+                <assign dest="myWorld" dest-java="myWorld" src="myWorld" src-java="myWorld" enable="true"/>
+                <assign dest="this.barra" dest-java="this.barra" src="barra" src-java="barra" enable="true"/>
+            </body>
+        </constructor>
+    </constructors>
+    <methods>
+        <method access="public" type="void" type-java="void" name="act" enable="true">
+            <javadoc xml:space="preserve">Act - do whatever the Bola wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <call expression="MovimientoBola()" expression-java="MovimientoBola()" enable="true"/>
+                <call expression="Rebote()" expression-java="Rebote()" enable="true"/>
+                <call expression="Desaparicion()" expression-java="Desaparicion()" enable="true"/>
+                <call expression="StoppageTime()" expression-java="StoppageTime()" enable="true"/>
+            </body>
+        </method>
+        <method access="public" type="void" type-java="void" name="Desaparicion" enable="true">
+            <javadoc xml:space="preserve">Desaparicion es el método en el que la bola al tocar los bloques, estos desaparecerán.</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <variable type="Actor" type-java="Actor" name="bloques" value="getOneIntersectingObject(Bloques.class)" value-java="getOneIntersectingObject(Bloques.class)" enable="true"/>
+                <if condition="bloques!=null&amp;&amp;bloques.getX()&gt;getX()+30" condition-java="bloques != null &amp;&amp; bloques.getX() &gt; getX() + 30" enable="true">
+                    <ifStatements>
+                        <call expression="getWorld().removeObject(bloques)" expression-java="getWorld().removeObject(bloques)" enable="true"/>
+                        <assign dest="dx" dest-java="dx" src="-dx" src-java=" - dx" enable="true"/>
+                        <assign dest="ContadorDePuntos" dest-java="ContadorDePuntos" src="ContadorDePuntos+1" src-java="ContadorDePuntos + 1" enable="true"/>
+                    </ifStatements>
+                    <elseIf condition="bloques!=null&amp;&amp;bloques.getX()&gt;getX()-30" condition-java="bloques != null &amp;&amp; bloques.getX() &gt; getX() - 30">
+                        <call expression="getWorld().removeObject(bloques)" expression-java="getWorld().removeObject(bloques)" enable="true"/>
+                        <assign dest="dx" dest-java="dx" src="-dx" src-java=" - dx" enable="true"/>
+                        <assign dest="ContadorDePuntos" dest-java="ContadorDePuntos" src="ContadorDePuntos+1" src-java="ContadorDePuntos + 1" enable="true"/>
+                    </elseIf>
+                    <elseIf condition="bloques!=null" condition-java="bloques != null">
+                        <call expression="getWorld().removeObject(bloques)" expression-java="getWorld().removeObject(bloques)" enable="true"/>
+                        <assign dest="ContadorDePuntos" dest-java="ContadorDePuntos" src="ContadorDePuntos+1" src-java="ContadorDePuntos + 1" enable="true"/>
+                    </elseIf>
+                </if>
+            </body>
+        </method>
+        <method access="public" type="void" type-java="void" name="MovimientoBola" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <call expression="setLocation(getX()+dx,getY()+dy)" expression-java="setLocation(getX() + dx, getY() + dy)" enable="true"/>
+            </body>
+        </method>
+        <method access="public" type="void" type-java="void" name="Rebote" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <if condition="isTouching(Barra.class)&amp;&amp;this.barra.getX()&gt;getX()+50" condition-java="isTouching(Barra.class) &amp;&amp; this.barra.getX() &gt; getX() + 50" enable="true">
+                    <ifStatements>
+                        <assign dest="dy" dest-java="dy" src="-dy" src-java=" - dy" enable="true"/>
+                        <assign dest="dx" dest-java="dx" src="-6" src-java="-6" enable="true"/>
+                    </ifStatements>
+                    <elseIf condition="isTouching(Barra.class)&amp;&amp;this.barra.getX()&lt;getX()-50" condition-java="isTouching(Barra.class) &amp;&amp; this.barra.getX() &lt; getX() - 50">
+                        <assign dest="dy" dest-java="dy" src="-dy" src-java=" - dy" enable="true"/>
+                        <assign dest="dx" dest-java="dx" src="6" src-java="6" enable="true"/>
+                    </elseIf>
+                    <elseIf condition="isTouching(Barra.class)&amp;&amp;this.barra.getX()&gt;getX()+40" condition-java="isTouching(Barra.class) &amp;&amp; this.barra.getX() &gt; getX() + 40">
+                        <assign dest="dy" dest-java="dy" src="-dy" src-java=" - dy" enable="true"/>
+                        <assign dest="dx" dest-java="dx" src="-5" src-java="-5" enable="true"/>
+                    </elseIf>
+                    <elseIf condition="isTouching(Barra.class)&amp;&amp;this.barra.getX()&lt;getX()-40" condition-java="isTouching(Barra.class) &amp;&amp; this.barra.getX() &lt; getX() - 40">
+                        <assign dest="dy" dest-java="dy" src="-dy" src-java=" - dy" enable="true"/>
+                        <assign dest="dx" dest-java="dx" src="5" src-java="5" enable="true"/>
+                    </elseIf>
+                    <elseIf condition="isTouching(Barra.class)&amp;&amp;this.barra.getX()&gt;getX()+30" condition-java="isTouching(Barra.class) &amp;&amp; this.barra.getX() &gt; getX() + 30">
+                        <assign dest="dy" dest-java="dy" src="-dy" src-java=" - dy" enable="true"/>
+                        <assign dest="dx" dest-java="dx" src="-4" src-java="-4" enable="true"/>
+                    </elseIf>
+                    <elseIf condition="isTouching(Barra.class)&amp;&amp;this.barra.getX()&lt;getX()-30" condition-java="isTouching(Barra.class) &amp;&amp; this.barra.getX() &lt; getX() - 30">
+                        <assign dest="dy" dest-java="dy" src="-dy" src-java=" - dy" enable="true"/>
+                        <assign dest="dx" dest-java="dx" src="4" src-java="4" enable="true"/>
+                    </elseIf>
+                    <elseIf condition="isTouching(Barra.class)&amp;&amp;this.barra.getX()&gt;getX()+20" condition-java="isTouching(Barra.class) &amp;&amp; this.barra.getX() &gt; getX() + 20">
+                        <assign dest="dy" dest-java="dy" src="-dy" src-java=" - dy" enable="true"/>
+                        <assign dest="dx" dest-java="dx" src="-3" src-java="-3" enable="true"/>
+                    </elseIf>
+                    <elseIf condition="isTouching(Barra.class)&amp;&amp;this.barra.getX()&lt;getX()-20" condition-java="isTouching(Barra.class) &amp;&amp; this.barra.getX() &lt; getX() - 20">
+                        <assign dest="dy" dest-java="dy" src="-dy" src-java=" - dy" enable="true"/>
+                        <assign dest="dx" dest-java="dx" src="3" src-java="3" enable="true"/>
+                    </elseIf>
+                    <elseIf condition="isTouching(Barra.class)&amp;&amp;this.barra.getX()&gt;getX()+10" condition-java="isTouching(Barra.class) &amp;&amp; this.barra.getX() &gt; getX() + 10">
+                        <assign dest="dy" dest-java="dy" src="-dy" src-java=" - dy" enable="true"/>
+                        <assign dest="dx" dest-java="dx" src="-2" src-java="-2" enable="true"/>
+                    </elseIf>
+                    <elseIf condition="isTouching(Barra.class)&amp;&amp;this.barra.getX()&lt;getX()-10" condition-java="isTouching(Barra.class) &amp;&amp; this.barra.getX() &lt; getX() - 10">
+                        <assign dest="dy" dest-java="dy" src="-dy" src-java=" - dy" enable="true"/>
+                        <assign dest="dx" dest-java="dx" src="2" src-java="2" enable="true"/>
+                    </elseIf>
+                    <elseIf condition="isTouching(Barra.class)||isTouching(Bloques.class)" condition-java="isTouching(Barra.class) || isTouching(Bloques.class)">
+                        <assign dest="dy" dest-java="dy" src="-dy" src-java=" - dy" enable="true"/>
+                    </elseIf>
+                </if>
+                <if condition="getX()&gt;=getWorld().getWidth()-1" condition-java="getX() &gt;= getWorld().getWidth() - 1" enable="true">
+                    <ifStatements>
+                        <assign dest="dx" dest-java="dx" src="-dx" src-java=" - dx" enable="true"/>
+                    </ifStatements>
+                </if>
+                <if condition="getX()&lt;=0" condition-java="getX() &lt;= 0" enable="true">
+                    <ifStatements>
+                        <assign dest="dx" dest-java="dx" src="-dx" src-java=" - dx" enable="true"/>
+                    </ifStatements>
+                </if>
+                <if condition="getY()&gt;=getWorld().getHeight()+1" condition-java="getY() &gt;= getWorld().getHeight() + 1" enable="true">
+                    <ifStatements>
+                        <assign dest="dy" dest-java="dy" src="-dy" src-java=" - dy" enable="true"/>
+                    </ifStatements>
+                </if>
+                <if condition="getX()&gt;=750" condition-java="getX() &gt;= 750" enable="true">
+                    <ifStatements>
+                        <assign dest="dy" dest-java="dy" src="-dy" src-java=" - dy" enable="true"/>
+                    </ifStatements>
+                </if>
+            </body>
+        </method>
+        <method access="public" type="void" type-java="void" name="StoppageTime" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <if condition="ContadorDePuntos==120" condition-java="ContadorDePuntos == 120" enable="true">
+                    <ifStatements>
+                        <call expression="getWorld().showText(&quot;Felicidades, has ganado!&quot;,getWorld().getWidth()/2,getWorld().getHeight()/2)" expression-java="getWorld().showText(&quot;Felicidades, has ganado!&quot;, getWorld().getWidth() / 2, getWorld().getHeight() / 2)" enable="true"/>
+                    </ifStatements>
+                </if>
+            </body>
+        </method>
+    </methods>
+</class>
